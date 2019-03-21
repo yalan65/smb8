@@ -1,0 +1,301 @@
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-login100-form-btn {
+  width: 10%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login100-form-btn {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e0e0e0;
+  width: 130px;
+  height: 60px;
+  border-radius: 2px;
+  background: #006e2e;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 1;
+}
+
+.login100-form-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 130px;
+  height: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  background: #005bea;
+  background: -webkit-linear-gradient(bottom, #005bea, #00c6fb);
+  background: -o-linear-gradient(bottom, #005bea, #00c6fb);
+  background: -moz-linear-gradient(bottom, #005bea, #00c6fb);
+  background: linear-gradient(bottom, #005bea, #00c6fb);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.login100-form-btn:hover {
+  background: transparent;
+  color: #fff;
+  font-weight:bold;
+}
+
+.login100-form-btn:hover:before {
+  opacity: 1;
+}
+
+.logins-form-btn {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e0e0e0;
+
+  width: 80px;
+  height: 50px;
+  border-radius: 2px;
+  background: #006e2e;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  position: relative;
+  z-index: 1;
+}
+
+.logins-form-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 80px;
+  height: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  background: #005bea;
+  background: -webkit-linear-gradient(bottom, #005bea, #00c6fb);
+  background: -o-linear-gradient(bottom, #005bea, #00c6fb);
+  background: -moz-linear-gradient(bottom, #005bea, #00c6fb);
+  background: linear-gradient(bottom, #005bea, #00c6fb);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.logins-form-btn:hover {
+  background: transparent;
+  color: #fff;
+  font-weight:bold;
+}
+
+.logins-form-btn:hover:before {
+  opacity: 1;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+/*------------------------------------------------------------------
+[ For Map Page only ]*/
+.container-login100-map-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.login100-map-btn {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e0e0e0;
+
+  width: 200px;
+  height: 50px;
+  border-radius: 2px;
+  background: #006e2e;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  position: relative;
+  z-index: 1;
+}
+
+.login100-map-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 200px;
+  height: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  background: #005bea;
+  background: -webkit-linear-gradient(bottom, #005bea, #00c6fb);
+  background: -o-linear-gradient(bottom, #005bea, #00c6fb);
+  background: -moz-linear-gradient(bottom, #005bea, #00c6fb);
+  background: linear-gradient(bottom, #005bea, #00c6fb);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.login100-map-btn:hover {
+  background: transparent;
+  color: #fff;
+  font-weight:bold;
+}
+
+.login100-map-btn:hover:before {
+  opacity: 1;
+}
+
+
+/*------------------------------------------------------------------
+[ For Password Page only ]*/
+.container-login100-pass-btn {
+  width: 80%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.login100-pass-btn {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e0e0e0;
+
+  width: 140px;
+  height: 50px;
+  border-radius: 2px;
+  background: #006e2e;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  position: relative;
+  z-index: 1;
+}
+
+.login100-pass-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 140px;
+  height: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background: #005bea;
+  background: -webkit-linear-gradient(bottom, #005bea, #00c6fb);
+  background: -o-linear-gradient(bottom, #005bea, #00c6fb);
+  background: -moz-linear-gradient(bottom, #005bea, #00c6fb);
+  background: linear-gradient(bottom, #005bea, #00c6fb);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.login100-pass-btn:hover {
+  background: transparent;
+  color: #fff;
+  font-weight:bold;
+}
+
+.login100-pass-btn:hover:before {
+  opacity: 1;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+.row-no-padding {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+
+@media (max-width: 991px) {
+    .logins-form-btn{width: 60px;}
+    .login100-map-btn { margin-top: 20px;}
+}
+
+@media (max-width: 768px) {
+    .logins-form-btn{width: 60px;}
+    .login100-map-btn { margin-top: 20px;}
+}

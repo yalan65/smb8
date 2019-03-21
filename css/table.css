@@ -1,0 +1,54 @@
+.align-row
+{
+ margin-left: -15px;
+ text-align: left;
+ float: none;
+ width: 100%;
+}
+
+.pl12
+{
+ padding-left: 12px;
+}
+
+.pl15
+{
+ padding-left: 15px;
+}
+
+.mlm20
+{
+ margin-left: -20px;
+
+}
+
+.mr30
+{
+  margin-right: 30px;
+}
+
+.ml10
+{
+ margin-left: 10px !important;
+}
+
+.pl25
+{
+ padding-left: 25px;
+}
+
+.pl30
+{
+ padding-left: 30px;
+}
+
+.pl35
+{
+ padding-left: 35px;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
