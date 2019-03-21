@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sembcorp Marine Ltd - Map of Parts</title>
+  <!-- Own css html -->
+  <link href="css/smb/bootstrap.min.css" rel="stylesheet">
+  <link href="css/smb/jquery-ui.css" rel="stylesheet">
+  <link href="css/smb/navbar-offcanvas.css" rel="stylesheet">
+  <link href="css/smb/jBox.css" rel="stylesheet">
+  <link href="css/smb/font-awesome.min.css" rel="stylesheet">
+  <link href="css/smb/style.css" rel="stylesheet">
+  <link href="css/smb/style1.css" rel="stylesheet">
+  <link href="css/smb/custom.css" rel="stylesheet">
+  <link rel='stylesheet' id='tw-pagination-css'  href='css/smb/tw-pagination.css' type='text/css' media='screen' />
+  <!-- Own css html end -->
+  
+  <!-- Map css -->
+  <link rel='stylesheet' href='css/smb/button.css'>
+  <link rel='stylesheet' href='css/mapbox.css'>
+  <link rel='stylesheet' href='css/leafletv0.7.7.css'>
+  <link rel='stylesheet' href='css/map.css'>
+  <link rel="stylesheet" href="dist/L.Control.Locate.mapbox.min.css" />
+  <!--MAP css end -->
+  
+   <!-- Own json -->
+  <link rel="manifest" href="json/manifest.json">
+  <!-- Own json end -->
+  
+  <!-- Own script -->
+  <script src="js/smb/modernizr.min.js"></script>
+  <script type='text/javascript' src='js/smb/jquery1.12.4.js'></script>
+  <script type='text/javascript' src='js/smb/jquery-migrate-1.4.1.min.js'></script>
+  <!-- DropDown Mobile Arrange in Order -->
+  <script type='text/javascript' src="js/smb/jquery1.11.3.js"></script>
+  <script type='text/javascript' src='js/smb/lity.min.js'></script>
+  <!-- End DropDown Mobile -->
+   <!-- Bring table value over -->
+  <script src='js/clicktable.js'></script>
+   <!-- end -->
+  <script src='js/smb/jquery-ui.js'></script>
+  <script src='js/smb/bootstrap.min.js'></script>
+  <script src='js/smb/script.js'></script>
+  <script src='js/smb/jquery.maphilight.min.js'></script>
+  <script src='js/smb/jBox.js'></script>
+  <script type='text/javascript' src='js/smb/resize.js'></script>
+  <!-- Own script end -->
+  
+  <!-- Map script -->
+  <script src='js/leafletv0.7.7.js'></script>
+  <!-- Locate Location -->   
+  <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>  
+  <script src="src/L.Control.Locate.js" ></script> 
+  <!-- End Map script -->
+  
+ </head>
+ <body>
+
+   <div class="col-md-12">
+    <div class="container-fluid">
+     
+     <div class="row">
+        <span class="wdform-ch-rad-label1">
+                            Employee Number: 8881822  User: User 1                     
+                        </span>
+        <div class="col-md-6 col-xs-6">
+         <div class="container-login100-map-btn">
+           <button type="button" class="login100-map-btn" onclick="location.href = 'partsid.html' ">
+             Show Part History
+            </button>
+         </div>
+         </div>
+         
+
+         <div class="col-md-6 col-xs-6">
+           <h2 class='title' style="color:orange;">Part ID :  
+           
+            <input id="parts" class="u-input u-fill-h u-input--l" type="text" name="parts" style="background-color: #808080;" placeholder="PT211-3156-121-11"/>
+          
+            </h2>
+         </div>
+    
+       </div>
+     <form class="mapform"> 
+        
+        
+      <div id="image-map"></div>
+      
+      
+      <script type="text/javascript">
+         // Using leaflet.js to pan and zoom a big image.
+// See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
+// Marker Pin: https://codepen.io/zachdunn/pen/wapEam
+// create the slippy map
+var map = L.map('image-map', {
+  minZoom: 1,
+  maxZoom: 4,
+  center: [-60, 80],
+  zoom: 3,
+  crs: L.CRS.Simple,
+  attributionControl: false
+});
+//.addAttribution('SembMarine Confidentiall').addTo(map);
+L.control.attribution({
+  prefix: false
+}).addAttribution('SembMarine Confidential').addTo(map);
+
+// House: https://i.imgur.com/cenqiCf.jpg
+// Palace SVG (1280 x 806): https://dl.dropbox.com/s/yhrpnftsuis15z6/Topkapi_Palace_plan.svg
+// dimensions of the image
+var w = 6297 * 0.5,
+    h = 2167 * 0.5,
+    url = 'images/map_shopfloor1.jpg';
+
+// calculate the edges of the image, in coordinate space
+var southWest = map.unproject([0, h], map.getMaxZoom()-1);
+var northEast = map.unproject([w, 0], map.getMaxZoom()-1);
+var bounds = new L.LatLngBounds(southWest, northEast);
+
+// add the image overlay, 
+// so that it covers the entire map
+L.imageOverlay(url, bounds).addTo(map);
+
+// tell leaflet that the map is exactly as big as the image
+map.setMaxBounds(bounds);
+
+// pixel coords
+var m = {
+x: 3148.5, 
+y: 1083.5
+
+}
+
+var k = {
+ao: 1000,
+bo: 1000
+}
+//Add marker
+var newMarkerGroup = new L.LayerGroup();
+
+var marker3 = new L.Marker([k.ao, k.bo]);
+map.addLayer(marker3); 
+
+marker3.bindPopup("<b>Initial</b><br>Dot");
+
+
+map.on('click', addMarker);
+var addedOne = false,
+    customPin = L.divIcon({
+    className: 'location-pin',
+    //html: '<img src="https://static.robinpowered.com/roadshow/robin-avatar.png"><div class="pin"></div><div class="pulse"></div>',
+    html: '<img src="images/orange.png"><div class="pin"></div><div class="pulse"></div>',
+    iconSize: [30, 30],
+    iconAnchor: [0, 0]
+  });
+function addMarker(e){
+// Add marker to map at click location; add popup window
+  if (addedOne) {
+    return;
+  }
+ 
+  addedOne = true;
+}
+
+function onMapClick(e) {
+    alert("You clicked the map at " + e.latlng);
+}
+
+map.on('click', onMapClick);
+// Lookup neighbors https://github.com/mapbox/leaflet-knn
+/*
+var marker = L.marker(map.unproject([m.x, m.y], map.getMaxZoom()), {
+    icon: customPin
+  }).addTo(map);
+//window.alert(m.x);
+//window.alert(m.y)
+*/
+
+var marker2 = L.marker(map.unproject([k.ao, k.bo], map.getMaxZoom()),{
+    icon: customPin
+  } ).addTo(map);
+
+
+// Add pop up for click
+marker2.bindPopup("<b>PART ID:</b><br>PT211-3156-121-11<br>Process Name: Cut 1<br>Location: N56<br>DATE: 29/1/2019</b>");
+
+marker2.on('mouseover', function (e) {
+            this.openPopup();
+});
+marker2.on('mouseout', function (e) {
+            this.closePopup();
+});
+
+/*lc = L.control.locate({
+    strings: {
+        title: "Show me where I am, yo!"
+    }
+}).addTo(map);*/
+         
+         
+         </script>
+      
+   
+      
+     </form>
+     </div>
+    </div>
+ </body>
+</html>

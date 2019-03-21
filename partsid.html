@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sembcorp Marine - Parts Location</title>
+        <link rel="icon" href="https://www.sembmarine.com/scm2016/wp-content/uploads/2016/01/cropped-scm_logo_only-32x32.png" sizes="32x32" />
+        <link rel="icon" href="https://www.sembmarine.com/scm2016/wp-content/uploads/2016/01/cropped-scm_logo_only-192x192.png" sizes="192x192" />
+        <!-- Own css html -->
+        <link href="css/smb/bootstrap.min.css" rel="stylesheet">
+        <link href="css/smb/jquery-ui.css" rel="stylesheet">
+        <link href="css/smb/navbar-offcanvas.css" rel="stylesheet">
+        <link href="css/smb/jBox.css" rel="stylesheet">
+        <link href="css/smb/font-awesome.min.css" rel="stylesheet">
+        <link href="css/smb/style.css" rel="stylesheet">
+        <link href="css/smb/style1.css" rel="stylesheet">
+        <link href="css/smb/custom.css" rel="stylesheet">
+        <link href="css/smb/badge.css" rel="stylesheet">
+        <link rel='stylesheet' id='tw-pagination-css'  href='css/smb/tw-pagination.css' type='text/css' media='screen' />
+        <!-- For table -->
+        <link href="css/table.css" rel="stylesheet">
+        <!-- Own css html end -->
+        <!-- Own json -->
+        <link rel="manifest" href="json/manifest.json">
+        <!-- Own json end -->
+        <!-- Own script -->
+        <script src="js/smb/modernizr.min.js"></script>
+        <script type='text/javascript' src='js/smb/jquery1.12.4.js'></script>
+        <script type='text/javascript' src='js/smb/jquery-migrate-1.4.1.min.js'></script>
+        <!-- DropDown Mobile -->
+        <script type='text/javascript' src="js/smb/jquery1.11.3.js"></script>
+        <script type='text/javascript' src='js/smb/lity.min.js'></script>
+        <script src='js/smb/jquery-ui.js'></script>
+        <script src='js/smb/bootstrap.min.js'></script>
+        <script src='js/smb/script.js'></script>
+        <script src='js/smb/jquery.maphilight.min.js'></script>
+        <script src='js/smb/jBox.js'></script>
+        <script type='text/javascript' src='js/smb/resize.js'></script>
+        <!-- Own script end -->
+    </head>
+    <body>
+        <div id="header" class='hidden-xs'>
+            <div class="container">
+                <a href="index.html" class="fa fa-sign-out ml780 mt20">Sign Out</a>
+                    <div class="col-md-4 col-sm-6 mtm50 logo">
+                        <a href="https://www.sembmarine.com/">
+                            <img src="https://www.sembmarine.com/scm2016/wp-content/themes/scm2015/img/scm-logo.png" class="img-responsive" id="logo" alt="Sembcorp Marine Ltd" title="Sembcorp Marine Ltd"/>
+                        </a>
+                    </div>
+                    <span class="wdform-ch-rad-label pull-right float-vertical-align1 pr55">
+                            Employee Number: 8881822  User: User 1                     
+                        </span>
+                       
+            </div>
+        </div>
+        <div class="navbar navbar2 navbar-inverse big-screen  navbar-default navbar-static-top">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#navmenus" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://www.sembmarine.com">
+                        <img src="https://www.sembmarine.com/scm2016/wp-content/themes/scm2015/img/scm-white.png" class="hidden-md hidden-lg hidden-sm img-responsive" id="logo"  alt="Sembcorp Marine Ltd" title="Sembcorp Marine Ltd"/>
+                    </a>
+                </div>
+                 <div class="navbar-offcanvas offcanvas collapse navbar-collapse" id="navmenus">
+                     <ul class="nav navbar-nav">
+                        <ul class="dropdown1 ">
+                            <li class="current-page-item mobile-nav mobile-nav dropdown">
+                            <a href ="index.html">Sign Out</a>
+                            </li>
+                        </ul>
+                     </ul>
+                </div>
+                <span class="pull-right float-vertical-align mobiletable webtable">
+                    <ul class="pagination1">
+                                <li class="page-item disabled">
+                                    <a href="#">Previous</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">2</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="#" class="page-link">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">5</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">Next</a>
+                                </li>
+                    </ul>   
+                    </span> 
+            <div class="col-md-2 hidden-print hidden-sm hidden-xs"></div>
+            <div class="container">
+                <div class="table-wrapper">
+                    <div class="col-md-12">
+                        <div class='col-md-12  hidden-print'>
+                            <div class='breadcrumbs'>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="locate.html">Locate Parts</a>
+                                    </li>
+                                    <li class='active'> <a href="mapall.html">Map </a></li>
+                                    <li class='active'>Part ID PT211-3156-121-11</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-wrapper" id="table" >
+                        <div class='col-md-12 pl35'>
+                            <div class='align-row pl10'>
+                                <div class='page-content' id='content'>
+                                    <div class='align-row '>
+                                        <div class='col-md-12'>
+                                        <table class="pg1" style="width: 100%">
+                                            <thead>
+                                                <tr style="color: #ffffff;background-color: #81817f">
+                                                    <td style="width: 275px;height: 21px;text-align: center">
+                                                        <strong>Location</strong>
+                                                    </td>
+                                                    <td style="width: 100px;height: 21px;text-align: center">
+                                                        <strong>Location Reference</strong>
+                                                    </td>
+                                                    <td style="width: 280px;height: 21px;text-align: center">
+                                                        <strong>Date/Time</strong>
+                                                    </td>
+                                                    <td style="width: 120px;height: 21px;text-align: center">
+                                                        <strong>Process Name</strong>
+                                                    </td>
+                                                    <td style="width: 130px;height: 21px;text-align: center">
+                                                        <strong>Employee Name</strong>
+                                                    </td>
+                                                    <td style="width: 115px;height: 21px;text-align: center">
+                                                        <strong>Employee Number</strong>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr style="height: 21px">
+                                                    <td style="width: 275px;height: 21px;text-align: center">
+                                                        <span>
+                                                        X:350;Y:200
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 100px;height: 21px;text-align: center">
+                                                        <span>
+                                                          N52
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 280px;height: 21px;text-align: center">
+                                                        <span>22/01/2019 09:03:00</span>
+                                                    </td>
+                                                    <td style="width: 120px;height: 21px;text-align: center">
+                                                        <span>Ship</span>
+                                                    </td>
+                                                    <td style="width: 130px;height: 21px;text-align: center">
+                                                        <span>User 1</span>
+                                                    </td>
+                                                    <td style="width: 115px;height: 24px;text-align: center">87678982
+                                                        </td>
+                                                </tr>
+                                                <tr style="height: 21px">
+                                                    <td style="width: 275px;height: 21px;text-align: center">
+                                                        <span>
+                                                        X:50;Y:6000
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 100px;height: 21px;text-align: center">
+                                                        <span>
+                                                            N53
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 280px;height: 21px;text-align: center">
+                                                        <span>21/01/2019 10:03:00</span>
+                                                    </td>
+                                                    <td style="width: 120px;height: 21px;text-align: center">
+                                                        <span>Cut 2</span>
+                                                    </td>
+                                                     <td style="width: 130px;height: 21px;text-align: center">
+                                                        <span>User 2</span>
+                                                    </td>
+                                                    <td style="width: 115px;height: 24px;text-align: center">88878982
+                                                        </td>
+                                                </tr>
+                                                <tr style="height: 21px">
+                                                    <td style="width: 275px;height: 21px;text-align: center">
+                                                        <span>
+                                                        X:1000;Y:9
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 100px;height: 21px;text-align: center">
+                                                        <span>
+                                                            N54
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 280px;height: 21px;text-align: center">
+                                                        <span>20/01/2019 11:03:00</span>
+                                                    </td>
+                                                    <td style="width: 120px;height: 21px;text-align: center">
+                                                        <span>Cut 1</span>
+                                                    </td>
+                                                     <td style="width: 130px;height: 21px;text-align: center">
+                                                        <span>User 3</span>
+                                                    </td>
+                                                    <td style="width: 115px;height: 24px;text-align: center">81112233
+                                                        </td>
+                                                </tr>
+                                                <tr style="height: 21px">
+                                                    <td style="width: 275px;height: 21px;text-align: center">
+                                                        <span>
+                                                        X:0;Y:0
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 100px;height: 21px;text-align: center">
+                                                        <span>
+                                                        N55
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 280px;height: 21px;text-align: center">
+                                                        <span>19/01/2019 12:03:00</span>
+                                                    </td>
+                                                    <td style="width: 120px;height: 21px;text-align: center">
+                                                        <span>Paint</span>
+                                                    </td>
+                                                     <td style="width: 130px;height: 21px;text-align: center">
+                                                        <span>User 4</span>
+                                                    </td>
+                                                    <td style="width: 115px;height: 24px;text-align: center">89878982
+                                                        </td>
+                                                </tr>
+                                                <tr style="height: 21px">
+                                                    <td style="width: 275px;height: 21px;text-align: center">
+                                                        <span>
+                                                        X:0;Y:900
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 100px;height: 21px;text-align: center">
+                                                        <span>
+                                                          N56
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 280px;height: 21px;text-align: center">
+                                                        <span>18/01/2019 13:03:00</span>
+                                                    </td>
+                                                    <td style="width: 120px;height: 21px;text-align: center">
+                                                        <span>Mill</span>
+                                                    </td>
+                                                    <td style="width: 130px;height: 21px;text-align: center">
+                                                        <span>User 5</span>
+                                                    </td>
+                                                    <td style="width: 115px;height: 24px;text-align: center">87229855
+                                                        </td>
+                                                </tr>
+                                                <tr style="height: 21px">
+                                                    <td style="width: 275px;height: 21px;text-align: center">
+                                                        <span>
+                                                        X:500;Y:900
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 100px;height: 21px;text-align: center">
+                                                        <span>
+                                                          N57
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 280px;height: 21px;text-align: center">
+                                                        <span>17/01/2019 13:03:00</span>
+                                                    </td>
+                                                    <td style="width: 120px;height: 21px;text-align: center">
+                                                        <span>UnPack</span>
+                                                    </td>
+                                                    <td style="width: 130px;height: 21px;text-align: center">
+                                                        <span>User 6</span>
+                                                    </td>
+                                                    <td style="width: 115px;height: 24px;text-align: center">71678982
+                                                    </td>
+                                                </tr>
+                                                <tr style="height: 21px">
+                                                    <td style="width: 275px;height: 21px;text-align: center">
+                                                        <span>
+                                                        X:500;Y:1500
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 100px;height: 21px;text-align: center">
+                                                        <span>
+                                                          N58
+                                                        </span>
+                                                    </td>
+                                                    <td style="width: 280px;height: 21px;text-align: center">
+                                                        <span>16/01/2019 13:03:00</span>
+                                                    </td>
+                                                    <td style="width: 120px;height: 21px;text-align: center">
+                                                        <span>Order</span>
+                                                    </td>
+                                                    <td style="width: 130px;height: 21px;text-align: center">
+                                                        <span>User 7</span>
+                                                    </td>
+                                                    <td style="width: 115px;height: 24px;text-align: center">87612182
+                                                        </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="pull-left">
+                        <div class="clearfix ml10 pl20">
+                            <div class="hint-text">Showing 
+                                <b>7</b> out of 
+                                <b>100</b> entries
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

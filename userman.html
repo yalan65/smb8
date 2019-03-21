@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Management</title>
+  <link rel="icon" href="https://www.sembmarine.com/scm2016/wp-content/uploads/2016/01/cropped-scm_logo_only-32x32.png" sizes="32x32" />
+  <link rel="icon" href="https://www.sembmarine.com/scm2016/wp-content/uploads/2016/01/cropped-scm_logo_only-192x192.png" sizes="192x192" />
+  <!-- Own css html -->
+  <link href="css/smb/bootstrap.min.css" rel="stylesheet">
+  <link href="css/smb/jquery-ui.css" rel="stylesheet">
+  <link href="css/smb/navbar-offcanvas.css" rel="stylesheet">
+  <link href="css/smb/jBox.css" rel="stylesheet">
+  <link href="css/smb/font-awesome.min.css" rel="stylesheet">
+  <link href="css/smb/style.css" rel="stylesheet">
+  <link href="css/smb/style1.css" rel="stylesheet">
+  <link href="css/smb/custom.css" rel="stylesheet">
+  <link href="css/smb/button.css" rel="stylesheet">
+  <link rel='stylesheet' id='tw-pagination-css'  href='css/smb/tw-pagination.css' type='text/css' media='screen' />
+  <!-- Own css html end -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--Copy over rpass css format -->
+  <link href="css/rpass.css" rel="stylesheet">
+  <!-- Own json -->
+  <link rel="manifest" href="file://json/manifest.json">
+  <!-- Own json end -->
+  <!-- Own script -->
+  <script src="js/smb/modernizr.min.js"></script>
+  <script type='text/javascript' src='js/smb/jquery1.12.4.js'></script>
+  <script type='text/javascript' src='js/smb/jquery-migrate-1.4.1.min.js'></script>
+  <!-- DropDown Mobile -->
+  <script type='text/javascript' src="js/smb/jquery1.11.3.js"></script>
+  <script type='text/javascript' src='js/smb/lity.min.js'></script>
+  <script src='js/smb/jquery-ui.js'></script>
+  <script src='js/smb/bootstrap.min3.3.7.js'></script>
+  <script src='js/smb/script.js'></script>
+  <script src='js/smb/jquery.maphilight.min.js'></script>
+  <script src='js/smb/jBox.js'></script>
+  <script type='text/javascript' src='js/smb/resize.js'></script>
+  <!-- Own script end -->
+ </head>
+ <body>
+  <div id="header" class='hidden-xs'>
+   <div class="container">
+       <a href="index.html" class="fa fa-sign-out ml820 mt20">Sign Out</a>
+     <div class="col-md-4 col-sm-6 mtm50 logo">
+      <a href="https://www.sembmarine.com/">
+       <img src="https://www.sembmarine.com/scm2016/wp-content/themes/scm2015/img/scm-logo.png" class="img-responsive" id="logo" alt="Sembcorp Marine Ltd" title="Sembcorp Marine Ltd"/>
+      </a>
+     </div>
+          <span class="wdform-ch-rad-label ml370">
+                            Employee Number: 8881822  User: User 1                     
+                        </span>
+   </div>
+  </div>
+  <div class="navbar navbar2 navbar-inverse big-screen  navbar-default navbar-static-top">
+   <div class="container">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#navmenus" aria-expanded="false">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+     </button>
+     <a class="navbar-brand" href="https://www.sembmarine.com">
+      <img src="https://www.sembmarine.com/scm2016/wp-content/themes/scm2015/img/scm-white.png" class="hidden-md hidden-lg hidden-sm img-responsive" id="logo"  alt="Sembcorp Marine Ltd" title="Sembcorp Marine Ltd"/>
+     </a>
+    </div>
+    <div class="navbar-offcanvas offcanvas collapse navbar-collapse" id="navmenus">
+     <ul class="nav navbar-nav">
+      <li class="dropdown  ">
+       <a href="locate.html">Locate Parts</a>
+       <ul class="dropdown-menu">
+        <li class="current-page-item mobile-nav mobile-nav dropdown">
+         <a href="locate.html">Locate Parts</a>
+        </li>
+       </ul>
+      </li>
+      <li class="dropdown  ">
+       <a href="#" class="at-drop-down">Administration</a>
+       <ul class="dropdown-menu">
+        <li class="dropdown-submenu " >
+         <a href="userman.html">User Management</a>
+        </li>
+        <li class="dropdown-submenu " >
+         <a href="processman.html">Process Management</a>
+        </li>
+       </ul>
+      </li>
+      <li class="dropdown  ">
+       <a href="guide.pdf" class="at-drop-down">User Guide</a>
+       <ul class="dropdown-menu">
+        <li class="current-page-item mobile-nav mobile-nav dropdown">
+         <a href ="guide.pdf">User Guide</a>
+        </li>
+       </ul>
+      </li>
+        <ul class="dropdown1 ">
+        <li class="current-page-item mobile-nav mobile-nav dropdown">
+         <a href ="index.html">Sign Out</a>
+        </li>
+       </ul>
+     </ul>
+  
+    </div>
+   </div>
+     <ul class="pagination pull-right mobile mtm85 mr169">
+      <li class="page-item disabled">
+       <a href="#">Previous</a>
+      </li>
+      <li class="page-item">
+       <a href="#" class="page-link">1</a>
+      </li>
+      <li class="page-item">
+       <a href="#" class="page-link">2</a>
+      </li>
+      <li class="page-item active">
+       <a href="#" class="page-link">3</a>
+      </li>
+      <li class="page-item">
+       <a href="#" class="page-link">4</a>
+      </li>
+      <li class="page-item">
+       <a href="#" class="page-link">5</a>
+      </li>
+      <li class="page-item">
+       <a href="#" class="page-link">Next</a>
+      </li>
+     </ul>
+   <div class="container">
+    <div class="col-md-12">
+     <!-- Content -->
+     <div class="u-box1">
+      <div class="public-form1 mlm30">
+       <h1 class="page-title1 mb10" align="center">User Management</h1>
+       <table class="table custtable table-hover1">
+        <thead>
+         <tr>
+          <th style="vertical-align: middle; padding-bottom: 20px">Employee Name</th>
+          <th style="vertical-align: middle; padding-bottom: 20px">Employee Number</th>
+          <th style="vertical-align: middle; padding-bottom: 20px">User Type</th>
+          <th style="vertical-align: middle; padding-bottom: 20px">User Status</th>
+          <th style="vertical-align: middle; padding-bottom: 20px">Action</th>
+         </tr>
+        </thead>
+        <tbody align="left">
+         <tr>
+          <td>User 1</td>
+          <td>88818222</td>
+          <td>User</td>
+          <td>Unlocked</td>
+          <td>
+           <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+           </a>
+           <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td>User 2</td>
+          <td>86527381</td>
+          <td>Administrator</td>
+          <td>Unlocked</td>
+          <td>
+           <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+           </a>
+           <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td>User 3</td>
+          <td>80891222</td>
+          <td>Administrator</td>
+          <td>Unlocked</td>
+          <td>
+           <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+           </a>
+           <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td>User 4</td>
+          <td>81362883</td>
+          <td>Administrator</td>
+          <td style="color:red;" >Locked</td>
+          <td>
+           <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+           </a>
+           <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td>User 5</td>
+          <td>82323225</td>
+          <td>User</td>
+          <td>Unlocked</td>
+          <td>
+           <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+           </a>
+           <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+           </a>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <div class="table-title">
+        <div class="col-sm-12">
+         <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
+          <i class="material-icons">&#xE147;</i>
+          <span>Add New User</span>
+         </a>
+        </div>
+       </div>
+       <div class="clearfix">
+        <div class="hint-text pull-left">Showing 
+         <b>5</b> out of 
+         <b>25</b> entries
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Edit Modal HTML -->
+  <div id="addEmployeeModal" class="modal fade">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <form>
+      <div class="modal-header">
+       <h4 class="modal-title">Add User</h4>
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+       <div class="form-group">
+       <div class="form-group">
+        <label>Employee Name</label>
+        <input type="text" class="form-control" required>
+       </div>
+        <label>Employee Number</label>
+        <input type="text" class="form-control" required>
+       </div>
+       <div class="form-group">
+        <label>Password</label>
+        <input type="text" class="form-control" required>
+       </div>
+       <div class="form-group">
+        <label>User Type</label>
+        <select class="form-control" name= "designation" id="select">
+         <option style="color:gray" value="UserType">UserType</option>
+         <option value="Administrator">Administrator</option>
+         <option value="NormalUser">Normal User</option>
+        </select>
+       </div>
+      
+      </div>
+      <div class="modal-footer">
+       <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+       <input type="submit" class="btn btnsuccess2" value="Add">
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+  <!-- Edit Modal HTML -->
+  <div id="editEmployeeModal" class="modal fade">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <form>
+      <div class="modal-header">
+       <h5 class="modal-title">Edit Employee</h5>
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+       <div class="form-group">
+        <label>Employee Name</label>
+        <input type="text" class="form-control" required placeholder="User 1">
+       </div>
+       <div class="form-group">
+        <label>Employee Number</label>
+        <input type="text" class="form-control" required placeholder="8881822">
+       </div>
+       <div class="form-group">
+        <label>Password</label>
+        <input type="text" class="form-control" required placeholder="Wagthe12!">
+       </div>
+       <div class="form-group">
+        <label>User Type</label>
+        <select class="form-control" name= "designation" id="select">
+         <option style="color:gray" value="UserType">UserType</option>
+         <option value="Administrator">Administrator</option>
+         <option value="NormalUser">Normal User</option>
+        </select>
+       </div>
+       <div class="form-group">
+        <label>User Status</label>
+        <input type="text" class="form-control" required placeholder="Unlocked">
+       </div>
+      </div>
+      <div class="modal-footer">
+       <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+       <input type="submit" class="btn btn-info" value="Save">
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+  <!-- Delete Modal HTML -->
+  <div id="deleteEmployeeModal" class="modal fade">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <form>
+      <div class="modal-header">
+       <h4 class="modal-title">Delete Employee</h4>
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+   
+      <div class="modal-footer">
+       <input type="submit" class="btn btn-danger" value="Delete">
+       <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

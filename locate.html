@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sembcorp Marine - Parts Location</title>
+        <link rel="icon" href="https://www.sembmarine.com/scm2016/wp-content/uploads/2016/01/cropped-scm_logo_only-32x32.png" sizes="32x32" />
+        <link rel="icon" href="https://www.sembmarine.com/scm2016/wp-content/uploads/2016/01/cropped-scm_logo_only-192x192.png" sizes="192x192" />
+        <!-- Own css html -->
+        <link href="css/smb/bootstrap.min.css" rel="stylesheet">
+        <link href="css/smb/jquery-ui.css" rel="stylesheet">
+        <link href="css/smb/navbar-offcanvas.css" rel="stylesheet">
+        <link href="css/smb/jBox.css" rel="stylesheet">
+        <link href="css/smb/font-awesome.min.css" rel="stylesheet">
+        <link href="css/smb/style.css" rel="stylesheet">
+        <link href="css/smb/style1.css" rel="stylesheet">
+        <link href="css/smb/custom.css" rel="stylesheet">
+        <link href="css/smb/button.css" rel="stylesheet">
+        <link rel='stylesheet' id='tw-pagination-css'  href='css/smb/tw-pagination.css' type='text/css' media='screen' />
+        <!-- Own css html end -->
+        <!--Copy over rpass css format -->
+        <link href="css/rpass.css" rel="stylesheet">
+        <!-- Own json -->
+        <link rel="manifest" href="file://json/manifest.json">
+        <!-- Own json end -->
+        <!-- Own script -->
+        <script src="js/smb/modernizr.min.js"></script>
+        <script type='text/javascript' src='js/smb/jquery1.12.4.js'></script>
+        <script type='text/javascript' src='js/smb/jquery-migrate-1.4.1.min.js'></script>
+        <!-- DropDown Mobile -->
+        <script type='text/javascript' src="js/smb/jquery1.11.3.js"></script>
+        <script type='text/javascript' src='js/smb/lity.min.js'></script>
+        <script src='js/smb/jquery-ui.js'></script>
+        <script src='js/smb/bootstrap.min.js'></script>
+        <script src='js/smb/script.js'></script>
+        <script src='js/smb/jquery.maphilight.min.js'></script>
+        <script src='js/smb/jBox.js'></script>
+        <script type='text/javascript' src='js/smb/resize.js'></script>
+        <!-- Own script end -->
+    </head>
+    <body class="contain">
+        <div id="header" class='hidden-xs'>
+            <div class="container">
+                 <a href="index.html" class="fa fa-sign-out ml780 mt20">Sign Out</a>
+                    <div class="col-md-4 col-sm-6 mtm50 logo">
+                        <a href="https://www.sembmarine.com/">
+                            <img src="https://www.sembmarine.com/scm2016/wp-content/themes/scm2015/img/scm-logo.png" class="img-responsive" id="logo" alt="Sembcorp Marine Ltd" title="Sembcorp Marine Ltd"/>
+                        </a>
+                    </div>    
+                 <span class="wdform-ch-rad-label ml330">
+                            Employee Number: 8881822  User: User 1                     
+                        </span>
+            </div>
+            
+        </div>
+        <div class="navbar navbar2 navbar-inverse big-screen  navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#navmenus" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://www.sembmarine.com">
+                        <img src="https://www.sembmarine.com/scm2016/wp-content/themes/scm2015/img/scm-white.png" class="hidden-md hidden-lg hidden-sm img-responsive" id="logo"  alt="Sembcorp Marine Ltd" title="Sembcorp Marine Ltd"/>
+                    </a>
+                </div>
+                <div class="navbar-offcanvas offcanvas collapse navbar-collapse" id="navmenus">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown  ">
+                            <a href="locate.html">Locate Parts</a>
+                            <ul class="dropdown-menu">
+                                <li class="current-page-item mobile-nav mobile-nav dropdown">
+                                    <a href="locate.html">Locate Parts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown  ">
+                            <a href="#" class="at-drop-down">Administration</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu " >
+                                    <a href="userman.html">User Management</a>
+                                </li>
+                                <li class="dropdown-submenu " >
+                                    <a href="processman.html">Process Management</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown  ">
+                            <a href="guide.pdf" class="at-drop-down">User Guide</a>
+                            <ul class="dropdown-menu">
+                                <li class="current-page-item mobile-nav mobile-nav dropdown">
+                                    <a href ="guide.pdf">User Guide</a>
+                                </li>
+                            </ul>
+                        </li>   
+                            <ul class="dropdown1 ">
+                            <li class="current-page-item mobile-nav mobile-nav dropdown">
+                            <a href ="index.html">Sign Out</a>
+                            </li>
+                            </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 hidden-print hidden-sm hidden-xs"></div>
+            <div class="container">
+                <div class="col-md-12">
+                 
+                        <div class="public-form">
+                            <h1 class="page-title mb30" align="center">Locate Parts</h1>
+                            <form accept-charset="UTF-8" method="post">
+                                <input name="utf8" type="hidden" />
+                                <fieldset>
+                                    <div class="c-form-row c-form-row--stacked c-form-row--primary">
+                                        <div class="c-form-row_label">
+                                            <label for="partslocator">Search By Parts Number</label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="c-form-row_field inline">
+                                                <input id="parts" class="u-input u-fill-h u-input--l" type="text" name="parts" placeholder="Search for Parts ID ..."/>
+                                            </div>
+                                            <div class="container-login100-form-btn inline">
+                                                <button type="button" class="btn logins-form-btn" onclick="location.href='partsall.html'">
+                                                    <i class="fa fa-search fa-lg"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='mt15'></div>
+                                    <div class="c-form-row c-form-row--stacked c-form-row--primary">
+                                        <div class="c-form-row_label">
+                                            <label for="partslocator">Search By Process Completion Status</label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="c-form-row_field inline">
+                                                <input id="parts" class="u-input u-fill-h u-input--l" type="text" name="parts" placeholder="Search for Completion Status"/>
+                                            </div>
+                                            <div class="container-login100-form-btn inline">
+                                                <button type="button" class="btn logins-form-btn" onclick="location.href='parts.html'">
+                                                    <i class="fa fa-search fa-lg"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

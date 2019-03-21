@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Process Management</title>
+  <link rel="icon" href="https://www.sembmarine.com/scm2016/wp-content/uploads/2016/01/cropped-scm_logo_only-32x32.png" sizes="32x32" />
+  <link rel="icon" href="https://www.sembmarine.com/scm2016/wp-content/uploads/2016/01/cropped-scm_logo_only-192x192.png" sizes="192x192" />
+  <!-- Own css html -->
+  <link href="css/smb/bootstrap.min.css" rel="stylesheet">
+  <link href="css/smb/jquery-ui.css" rel="stylesheet">
+  <link href="css/smb/navbar-offcanvas.css" rel="stylesheet">
+  <link href="css/smb/jBox.css" rel="stylesheet">
+  <link href="css/smb/font-awesome.min.css" rel="stylesheet">
+  <link href="css/smb/style.css" rel="stylesheet">
+  <link href="css/smb/style1.css" rel="stylesheet">
+  <link href="css/smb/custom.css" rel="stylesheet">
+  <link href="css/smb/button.css" rel="stylesheet">
+  <link rel='stylesheet' id='tw-pagination-css'  href='css/smb/tw-pagination.css' type='text/css' media='screen' />
+  <!-- Own css html end -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--Copy over rpass css format -->
+  <link href="css/rpass.css" rel="stylesheet">
+  <!-- Own json -->
+  <link rel="manifest" href="file://json/manifest.json">
+  <!-- Own json end -->
+  <!-- Own script -->
+  <script src="js/smb/modernizr.min.js"></script>
+  <script type='text/javascript' src='js/smb/jquery1.12.4.js'></script>
+  <script type='text/javascript' src='js/smb/jquery-migrate-1.4.1.min.js'></script>
+  <!-- DropDown Mobile -->
+  <script type='text/javascript' src="js/smb/jquery1.11.3.js"></script>
+  <script type='text/javascript' src='js/smb/lity.min.js'></script>
+  <script src='js/smb/jquery-ui.js'></script>
+  <script src='js/smb/bootstrap.min3.3.7.js'></script>
+  <script src='js/smb/script.js'></script>
+  <script src='js/smb/jquery.maphilight.min.js'></script>
+  <script src='js/smb/jBox.js'></script>
+  <script type='text/javascript' src='js/smb/resize.js'></script>
+  <!-- Own script end -->
+ </head>
+ <body>
+  <div id="header" class='hidden-xs'>
+   <div class="container">
+    <a href="index.html" class="fa fa-sign-out ml820 mt20">Sign Out</a>
+
+     <div class="col-md-4 col-sm-6 mtm50 logo">
+      <a href="https://www.sembmarine.com/">
+       <img src="https://www.sembmarine.com/scm2016/wp-content/themes/scm2015/img/scm-logo.png" class="img-responsive" id="logo" alt="Sembcorp Marine Ltd" title="Sembcorp Marine Ltd"/>
+      </a>
+     </div>
+  
+          <span class="wdform-ch-rad-label ml370">
+                            Employee Number: 8881822  User: User 1                     
+                        </span>
+   </div>
+  </div>
+  <div class="navbar navbar2 navbar-inverse big-screen  navbar-default navbar-static-top">
+   <div class="container">   
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#navmenus" aria-expanded="false">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+     </button>
+     <a class="navbar-brand" href="https://www.sembmarine.com">
+      <img src="https://www.sembmarine.com/scm2016/wp-content/themes/scm2015/img/scm-white.png" class="hidden-md hidden-lg hidden-sm img-responsive" id="logo"  alt="Sembcorp Marine Ltd" title="Sembcorp Marine Ltd"/>
+     </a>
+    </div>  
+    <div class="navbar-offcanvas offcanvas collapse navbar-collapse" id="navmenus">
+     <ul class="nav navbar-nav">
+      <li class="dropdown  ">
+       <a href="locate.html">Locate Parts</a>
+       <ul class="dropdown-menu">
+        <li class="current-page-item mobile-nav mobile-nav dropdown">
+         <a href="locate.html">Locate Parts</a>
+        </li>
+       </ul>
+      </li>
+      <li class="dropdown  ">
+       <a href="#" class="at-drop-down">Administration</a>
+       <ul class="dropdown-menu">
+        <li class="dropdown-submenu " >
+         <a href="userman.html">User Management</a>
+        </li>
+        <li class="dropdown-submenu " >
+         <a href="processman.html">Process Management</a>
+        </li>
+       </ul>
+      </li>
+      <li class="dropdown  ">
+       <a href="guide.pdf" class="at-drop-down">User Guide</a>
+       <ul class="dropdown-menu">
+        <li class="current-page-item mobile-nav mobile-nav dropdown">
+         <a href ="guide.pdf">User Guide</a>
+        </li>
+       </ul>
+      </li>
+       <ul class="dropdown1 ">
+        <li class="current-page-item mobile-nav mobile-nav dropdown">
+         <a href ="index.html">Sign Out</a>
+        </li>
+         </ul>
+     </ul>
+    
+    </div>
+   </div>
+ 
+    <ul class="pagination pull-right mobile mtm85 mr169">
+      <li class="page-item disabled">
+       <a href="#">Previous</a>
+      </li>
+      <li class="page-item">
+       <a href="#" class="page-link">1</a>
+      </li>
+      <li class="page-item">
+       <a href="#" class="page-link">2</a>
+      </li>
+      <li class="page-item active">
+       <a href="#" class="page-link">3</a>
+      </li>
+      <li class="page-item">
+       <a href="#" class="page-link">4</a>
+      </li>
+      <li class="page-item">
+       <a href="#" class="page-link">5</a>
+      </li>
+      <li class="page-item">
+       <a href="#" class="page-link">Next</a>
+      </li>
+     </ul>
+      
+   <div class="container">
+    <div class="col-md-12">
+     <!-- Content -->
+     <div class="u-box1">
+      <div class="public-form1 mlm50">
+       <h1 class="page-title1 mb10" align="center">Process Management</h1>
+       <table class="table custtable table-hover1">
+        <thead>
+         <tr color: #ffffff;background-color: #81817f>
+          <th style="vertical-align: middle; padding-bottom: 20px">Process Name</th>
+          <th style="vertical-align: middle; padding-bottom: 20px">Process Descriptions</th>
+          <th style="vertical-align: middle; padding-bottom: 20px">Options</th>
+         </tr>
+        </thead>
+        <tbody align="left">
+         <tr>
+          <td>Cut 1</td>
+          <td>This is the Process to Cut the Metal Sheet in 550cm x 700 cm</td>
+          <td>
+           <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+            <i class="material-icons ml20" data-toggle="tooltip" title="Edit">&#xE254;</i>
+           </a>
+          </td>
+         </tr>
+         <tr>     
+          <td>Cut 2</td>
+          <td>This is the Process to cut the plastic sheet to 100m x 100m </td>
+          <td>
+           <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+            <i class="material-icons ml20" data-toggle="tooltip" title="Edit">&#xE254;</i>
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td>Paint 2</td>
+          <td>This is the process for painting the metal steel 100 cm x 100 cm with green</td>
+          <td>
+           <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+            <i class="material-icons ml20" data-toggle="tooltip" title="Edit">&#xE254;</i>
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td>Mill 1</td>
+          <td>This is the process of milling the sheet metal of 100cm x 100 cm wide</td>
+          <td>
+           <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+            <i class="material-icons ml20" data-toggle="tooltip" title="Edit">&#xE254;</i>
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td>Pack 1</td>
+          <td>This is the packing of sheet metal by 100 cm x 100 cm </td>
+          <td>
+           <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+            <i class="material-icons ml20" data-toggle="tooltip" title="Edit">&#xE254;</i>
+           </a>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <div class="table-title">
+        <div class="col-sm-12" style="text-align:center">
+         <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
+          <i class="material-icons">&#xE147;</i>
+          <span>Add New Process</span>
+         </a>
+        </div>
+       </div>
+       <div class="clearfix">
+        <div class="hint-text pull-left">Showing 
+         <b>5</b> out of 
+         <b>25</b> entries
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Add Modal HTML -->
+  <div id="addEmployeeModal" class="modal fade">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <form>
+      <div class="modal-header">
+       <h4 class="modal-title">Add Process</h4>
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+       <div class="form-group">
+        <label>Process Name</label>
+        <input type="text" class="form-control" required>
+       </div>
+       <div class="form-group">
+        <label>Process Descriptions</label>
+        <textarea class="form-control" required></textarea>
+       </div>
+      </div>
+      <div class="modal-footer" style="text-align:center">
+       <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+       <input type="submit" class="btn btn-success1" value="Add">
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+  <!-- Edit Modal HTML -->
+  <div id="editEmployeeModal" class="modal fade">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <form>
+      <div class="modal-header">
+       <h4 class="modal-title">Edit Process</h4>
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+       <div class="form-group">
+        <label>Process Name</label>
+        <input type="process" class="form-control" required placeholder="Cut 1">
+       </div>
+       <div class="form-group">
+        <label>Process Descriptions</label>
+        <textarea class="form-control" required placeholder="This is the Process to Cut the Metal Sheet in 550cm x 700 cm"></textarea>
+       </div>
+      </div>
+      <div class="modal-footer">
+       <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+       <input type="submit" class="btn btn-info" value="Save">
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+  <!-- Delete Modal HTML -->
+ </body>
+</html>
